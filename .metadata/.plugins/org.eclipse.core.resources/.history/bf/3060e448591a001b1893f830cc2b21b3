@@ -1,0 +1,16 @@
+package entities;
+
+public class Retangulo {
+	public String nome;
+	public double glossSalary;
+	public double tax;
+	
+	public double netSalary() {
+		return glossSalary - tax;
+	}
+	
+	public void increaseSalary(double percent) {
+		glossSalary *= percent/100;
+	}
+
+}

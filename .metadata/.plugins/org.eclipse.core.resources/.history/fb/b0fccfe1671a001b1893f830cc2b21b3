@@ -1,0 +1,28 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import utils.Calculator;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Calculator calc = new Calculator();
+		
+		double radius = sc.nextDouble();
+		
+		double c = calc.circum(radius);
+		double v = calc.volume(radius);
+		
+		System.out.printf("Circumference: %.2f", c);
+		System.out.printf("Volume: %.2f", v);
+		System.out.printf("PI value: %.2f", calc.PI);
+		
+		sc.close();
+	}
+
+}

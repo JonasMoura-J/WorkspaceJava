@@ -1,0 +1,26 @@
+package functionString;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String original = "abcd FJSJLH ANB abc DEFG";
+		
+		String s01 = original.toLowerCase();
+		String s02 = original.toUpperCase();
+		String s03 = original.trim();
+		String s04 = original.substring(2);
+		String s05 = original.substring(2, 9);
+		
+		System.out.println("Original - "+ original);
+		System.out.println("toLowerCase  - "+ s01);
+		System.out.println("toUpperCase  - "+ s02);
+		System.out.println("Trim  - "+ s03); //elimina espaços após e antes da cadeia
+		System.out.println("Substring  - "+ s04); //nova string a partir do caracter 2
+		System.out.println("Substring  - "+ s05); //nova string a partir do caracter 2 e vai até a posição 9
+		
+		
+
+	}
+
+}

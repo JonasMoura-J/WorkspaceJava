@@ -1,0 +1,18 @@
+
+public class Product {
+	private String Name;
+	private double Price;
+	private int Quatity;
+	
+	public double TotalValueInStrock() {
+		return Price * Quatity;
+	}
+	
+	public void AddProducts(int quantity) {
+		
+	}
+	
+	public void RemoveProducts(int quantity) {
+		
+	}
+}

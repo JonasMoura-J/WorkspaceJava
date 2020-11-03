@@ -1,0 +1,16 @@
+package entities;
+
+public class Salario {
+	public String nome;
+	public double glossSalary;
+	public double tax;
+	
+	public double netSalary() {
+		return glossSalary - tax;
+	}
+	
+	public double increaseSalary(double percent) {
+		return this.glossSalary *= percent/100;
+	}
+
+}

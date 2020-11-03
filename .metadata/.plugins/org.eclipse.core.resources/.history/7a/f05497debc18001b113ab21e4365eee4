@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o total de minutos: ");
+		int minuts = sc.nextInt();
+		
+		if(minuts>100) {
+			double valor = minuts - 100;
+			double total = 50 + valor*2;
+			System.out.printf("Valor a pagar: R$ %.2f", total);
+		}else {
+			
+		}
+		
+		sc.close();
+	}
+
+}

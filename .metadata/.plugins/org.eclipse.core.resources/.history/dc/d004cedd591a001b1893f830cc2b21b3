@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Salario;
+
+public class Project {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		Salario salario = new Salario();
+		
+		System.out.println("Enter rectangle width and height: ");
+		
+		salario.nome = sc.nextLine();
+		salario.glossSalary = sc.nextDouble();
+		salario.tax = sc.nextDouble();
+		
+		System.out.println("Employee: = " + salario.nome + salario.netSalary());
+		System.out.println("PERIMETER = " + retangulo.perimeter());
+		System.out.println("DIAGONA = " + retangulo.diagonal());
+		
+		sc.close();
+
+	}
+
+}

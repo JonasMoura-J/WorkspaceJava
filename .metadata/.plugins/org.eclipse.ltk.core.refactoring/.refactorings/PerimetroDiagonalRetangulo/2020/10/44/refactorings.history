@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entities.Triangulo.java&apos; to &apos;Retangulo.java&apos;&#x0D;&#x0A;- Original project: &apos;PerimetroDiagonalTriangulo&apos;&#x0D;&#x0A;- Original element: &apos;entities.Triangulo.java&apos;&#x0D;&#x0A;- Renamed element: &apos;entities.Retangulo.java&apos;" description="Rename compilation unit &apos;Triangulo.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entities{Triangulo.java" name="Retangulo.java" references="false" stamp="1604024533780" version="1.0"/>
+</session>

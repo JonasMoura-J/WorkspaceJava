@@ -1,0 +1,10 @@
+
+public class Product {
+	private String Name;
+	private double Price;
+	private int Quatity;
+	
+	public double TotalValueStrock() {
+		return  tot = Price * Quatity
+	}
+}
