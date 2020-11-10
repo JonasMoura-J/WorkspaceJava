@@ -1,0 +1,17 @@
+package utilities;
+
+public class Worker {
+	private String name;
+	private Worklevel level;
+	private double baseSalary;
+	
+	public void addContract(HourContract contract) {
+		
+	}
+	public void removeContract(HourContract contract){
+		
+	}
+	public Double income(Integer year, Integer month) {
+		return
+	}
+}

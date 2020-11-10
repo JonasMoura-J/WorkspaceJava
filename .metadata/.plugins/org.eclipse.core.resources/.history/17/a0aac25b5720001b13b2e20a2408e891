@@ -1,0 +1,19 @@
+package entities;
+
+import utilities.enums.WorkLevel;
+
+public class Worker {
+	private String name;
+	private WorkLevel level;
+	private double baseSalary;
+	
+	public void addContract(HourContract contract) {
+		
+	}
+	public void removeContract(HourContract contract){
+		
+	}
+	public Double income(Integer year, Integer month) {
+		return (double) (1 + 1);
+	}
+}

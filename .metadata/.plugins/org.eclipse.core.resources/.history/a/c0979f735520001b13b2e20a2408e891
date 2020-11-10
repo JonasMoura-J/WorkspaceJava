@@ -1,0 +1,7 @@
+package utilities;
+
+public class Worker {
+	private String name;
+	private Worklevel level;
+	private double baseSalary;
+}

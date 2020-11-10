@@ -1,0 +1,11 @@
+package entities;
+
+public class FuncTerceirizado extends Funcionario{
+	
+	private double despezaAdicional;
+	
+	public FuncTerceirizado(String nome, int horas, double valorPorHora) {
+		super(nome, horas, valorPorHora);
+	}
+	
+}

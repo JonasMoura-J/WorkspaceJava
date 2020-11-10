@@ -1,0 +1,16 @@
+package entities;
+
+public class FuncTerceirizado extends Funcionario{
+	
+	private double despezaAdicional = 1.1;
+	
+	public FuncTerceirizado(String nome, int horas, double valorPorHora, double despezaAdicional) {
+		super(nome, horas, valorPorHora);
+		this.despezaAdicional = despezaAdicional;
+	}
+	
+	@Override
+	public double pagamento() {
+		return (horas * valorPorHora)*despezaAdicional;
+	}
+}
