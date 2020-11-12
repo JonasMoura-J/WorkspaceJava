@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		File file = new File("read");
+		File file = new File("read.txt");
 		Scanner sc = null;
 		
 		try {
