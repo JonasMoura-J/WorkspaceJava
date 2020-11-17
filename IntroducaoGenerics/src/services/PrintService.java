@@ -3,14 +3,14 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-	private List<Integer> list = new ArrayList<>();
+public class PrintService<T>{
+	private List<T> list = new ArrayList<>();
 	
-	public void addValue(Integer value) {
+	public void addValue(T value) {
 		list.add(value);
 	}
 	
-	public Integer primeiro() {
+	public T primeiro() {
 		if(list.isEmpty()) {
 			throw new IllegalStateException("A lista está vazia");
 		}

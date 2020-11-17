@@ -9,7 +9,8 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		PrintService ps = new PrintService();
+		//desta forma, se obtem o type safety
+		PrintService<Integer> ps = new PrintService<>();
 		
 		System.out.print("Quantos valores irá digitar? ");
 		int n = sc.nextInt();
