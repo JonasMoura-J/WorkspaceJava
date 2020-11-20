@@ -2,6 +2,7 @@ package application;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -26,6 +27,18 @@ public class Main {
 		//sequencia de Fibonacci
 		Stream<Long> st4 = Stream.iterate(new Long[] {0L, 1L}, p -> new Long[] {p[1], p[0] + p[1]}).map(p -> p[0]);
 		System.out.println(Arrays.toString(st4.limit(10).toArray()));
+		
+		//PipeLines
+		
+		//O primeiro parametro do reduce é o valor inicial(neutro) e o segundo é uma função que recebe dois argumentos e gera um resultado
+		int sum = list.parallelStream().reduce(0, (x,y) -> x + y);
+		System.out.println("Soma = " + sum);
+		
+		System.out.println("---------------------");
+		
+		//filtrando a lista e pegando somente os numeros pares, depois multiplicando cada elemento da lista por 10
+		List<Integer> newList = list.stream().filter(x -> x%2 == 0).map(x -> x *10).collect(Collectors.toList());
+		System.out.println(Arrays.toString(newList.toArray()));
 	}
 
 }
